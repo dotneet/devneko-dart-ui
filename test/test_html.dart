@@ -2,8 +2,8 @@ library run_impl;
 import "package:unittest/unittest.dart";
 import 'package:unittest/html_config.dart';
 
-import "package:dn-ui/common.dart";
-import "package:dn-ui/vwindow.dart";
+import "package:dn_ui/common.dart";
+import "package:dn_ui/vwindow.dart";
 
 void main() {
   useHtmlConfiguration();
