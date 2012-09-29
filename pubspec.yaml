@@ -1,0 +1,6 @@
+name: dn_ui
+description: >
+  user interface library.
+dependencies:
+  unittest:
+    sdk: unittest
