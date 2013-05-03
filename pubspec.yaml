@@ -1,6 +1,6 @@
 name: dn_ui
-description: >
-  user interface library.
+version: 0.0.1
+author: dotneet@gmail.com
+description: user interface library.
 dependencies:
-  unittest:
-    sdk: unittest
+  unittest: any

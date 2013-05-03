@@ -32,8 +32,8 @@ class WindowBase {
   
   void update() {}
   
-  ElementEvents get on() => _elem.on;
-  CSSStyleDeclaration get style() => _elem.style;
+  Events get on => _elem.on;
+  CssStyleDeclaration get style => _elem.style;
   
   int get x => _location.x;
   void set x(num newX) {
@@ -47,7 +47,7 @@ class WindowBase {
   }
   int get z => _location.z;
   void set z(num newZ) {
-    this._elem.style.zIndex = newZ;
+    this._elem.style.zIndex = newZ.toString();
     _location.z = newZ;
   }
   
@@ -63,7 +63,7 @@ class WindowBase {
   }
   
   bool _visible = true;
-  bool get visible() => _visible;
+  bool get visible => _visible;
   void set visible(bool v) {
     if ( v ) {
       _elem.style.display = "inline-block";
@@ -87,7 +87,7 @@ class CanvasWindow extends WindowBase {
     this._context = _canvas.getContext("2d");
   }
   
-  CanvasRenderingContext2D get context() => _context;
+  CanvasRenderingContext2D get context => _context;
 }
 
 class VirtualWindow extends WindowBase {
